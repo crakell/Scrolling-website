@@ -83,7 +83,15 @@ section img#moon
 {
     mix-blend-mode: screen;
 }
+section img#mountain_front
+{
+    z-index: 10;
+}
 #text
 {
     position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
 }
