@@ -85,15 +85,20 @@ section img#moon
 }
 section img#mountain_front
 {
-    z-index: 10;
+    z-index: 100;
 }
+section img#mountain_behind
+{
+    z-index: -3;
+}
+
 #text
 {
     position: absolute;
     color: #fff;
     white-space: nowrap;
     font-size: 7.5vw;
-    z-index: 9;
+    z-index: -1;
 }
 #btn
 {
