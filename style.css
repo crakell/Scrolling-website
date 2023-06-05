@@ -113,3 +113,20 @@ section img#mountain_behind
     z-index: 9;
     transform: translateY(100px);
 }
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.sec h2
+{
+    font-size: 3.5;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+}
