@@ -17,14 +17,22 @@
         <section>
             <img src="stars.png" id="stars">
             <img src="moon.png" id="moon">
-            <img src="mountains_behind.png" id="mountain_behind">
+            <img src="mountains_behind.png" id="mountains_behind">
             <h2 id="text">Moon Light</h2>
-            <a href="#" id="btn">Explore</a>
+            <a href="#sec" id="btn">Explore</a>
             <img src="mountains_front.png" id="mountains_front">
         </section>
-        <div class="sec">
-            <h2>Parallax Scrolling Effects</h2>
+        <div class="sec" id="sec">
+            <h2>"Blooming Amidst Adversity"</h2>
             <p>In the depths of a quiet forest, a single ray of 
+                sunlight pierced through the thick canopy,illuminating a delicate flower. 
+                 It stood tall, its vibrant petals reaching toward the sky, 
+                 despite the surrounding darkness. 
+                 This flower was a symbol of resilience and hope, a reminder that even in the harshest conditions, 
+                 beauty could still flourish. Its presence spoke of the strength found within every individual, 
+                 a testament to the human spirit. And as the wind gently rustled its petals, 
+                 it whispered a simple truth: No matter the challenges we face, we possess the power to bloom amidst adversity.<br><br>
+                 In the depths of a quiet forest, a single ray of 
                 sunlight pierced through the thick canopy,illuminating a delicate flower. 
                  It stood tall, its vibrant petals reaching toward the sky, 
                  despite the surrounding darkness. 
@@ -50,5 +58,19 @@
                  it whispered a simple truth: No matter the challenges we face, we possess the power to bloom amidst adversity.
             </p>
         </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountain_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front= document.getElementById('mountains_front');
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                stars.style.left = value + 'px';
+            })
+        </script>
     </body>
 </html>
